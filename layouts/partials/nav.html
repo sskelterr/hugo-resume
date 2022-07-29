@@ -48,6 +48,12 @@
             <a class="nav-link js-scroll-trigger" href="/#blog">Blog</a>
           </li>
       {{ end }}
+      {{ if .Site.Params.showTeaching }}
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/#teaching">Teaching</a>
+      </li>
+  {{ end }}
+
     </ul>
   </div>
 </nav>
