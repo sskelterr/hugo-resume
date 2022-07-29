@@ -52,8 +52,13 @@
       <li class="nav-item">
         <a class="nav-link js-scroll-trigger" href="/#teaching">Teaching</a>
       </li>
-  {{ end }}
+      {{ end }}
+      {{ range sort .Site.Data.links "order" }}
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="{{ .url }}">{{ .title }}</a>
+      </li>
 
+      {{ end }}
     </ul>
   </div>
 </nav>
