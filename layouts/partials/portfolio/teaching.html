@@ -14,5 +14,7 @@
               </div>
               {{ end }}
           </div>
-          {{ partial "portfolio/testimonials.html" . }}
+          {{ if .Site.Params.showTestimonials }}
+            {{ partial "portfolio/testimonials.html" . }}
+          {{ end }}
         </section>
