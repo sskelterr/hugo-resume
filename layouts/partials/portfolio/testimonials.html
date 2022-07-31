@@ -3,12 +3,12 @@
     <div class="carousel-inner">
         {{ range first 1 .Site.Data.testimonials.testimonials }}
         <div class="carousel-item active">
-            <p class="d-block w-100">"{{ .quote }}"</p>
+            <p class="d-block w-100 font-italic">"{{ .quote }}"</p>
         </div>
         {{ end }}
         {{ range after 1 .Site.Data.testimonials.testimonials }}
         <div class="carousel-item">
-            <p class="d-block w-100">"{{ .quote }}"</p>
+            <p class="d-block w-100 font-italic">"{{ .quote }}"</p>
         </div>
         {{ end }}
 
