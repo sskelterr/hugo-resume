@@ -36,4 +36,7 @@
          {{ partial "sectionSummary" . }}
       {{ end }}
    {{ end }}
+   {{ if .Site.Params.showContact }}
+       {{ partial "contact.html" . }}
+   {{ end }}
 {{ end }}
