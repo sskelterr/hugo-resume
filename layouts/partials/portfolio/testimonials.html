@@ -2,13 +2,13 @@
 <div id="testimonials" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         {{ range first 1 .Site.Data.testimonials.testimonials }}
-        <div class="carousel-item active">
-            <p class="d-block w-100 font-italic">"{{ .quote }}"</p>
+        <div class="carousel-item mp-5 active">
+            <p class="d-block mx-4 font-italic">"{{ .quote }}"</p>
         </div>
         {{ end }}
         {{ range after 1 .Site.Data.testimonials.testimonials }}
         <div class="carousel-item">
-            <p class="d-block w-100 font-italic">"{{ .quote }}"</p>
+            <p class="d-block mx-4 font-italic">"{{ .quote }}"</p>
         </div>
         {{ end }}
 
