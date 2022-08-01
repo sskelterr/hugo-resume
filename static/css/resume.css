@@ -89,10 +89,10 @@ h2 {
     max-height: 10rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
-  #about resume-item .img-profile {
+  #about .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgb(120, 194, 173);
+    border: 0.5rem solid #78c2ad !important;
   }
 
   #sideNav .navbar-collapse {
@@ -158,4 +158,28 @@ a {
 
 a:hover, a:focus, a:active {
   color: #824027;
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #ffffff;
+  color: #78c2ad;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #78c2ad;
+  color: #ffffff;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
 }

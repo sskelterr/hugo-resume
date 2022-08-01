@@ -8,8 +8,10 @@
                 <h1 class="mb-0">{{ .Site.Params.firstName }}
                   <span class="text-primary">{{ .Site.Params.lastName }}</span>
                 </h1>
-                <div class="subheading">{{ .Site.Params.address }} ·
+                <div class="subheading">{{ .Site.Params.address }}
+                  {{ if .Site.Params.email }} ·
                   <a href="mailto:{{ substr .Site.Params.email 0 5}}-remove-{{ substr .Site.Params.email 5 }}">{{ substr .Site.Params.email 0 5}}<span style="display:none">-remove-</span>{{ substr .Site.Params.email 5 }}</a>
+                  {{ end }}
                 </div>
               </div>
               <div class="d-block d-lg-none col align-self-center">
